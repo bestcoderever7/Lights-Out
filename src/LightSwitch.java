@@ -84,33 +84,60 @@ public class LightSwitch implements ActionListener, KeyListener {
 		p.add(b25);
 		p.add(l2);
 		p.add(l);
-		b.setBackground(Color.BLACK);
-		b2.setBackground(Color.BLACK);
-		b3.setBackground(Color.BLACK);
-		b4.setBackground(Color.BLACK);
-		b5.setBackground(Color.BLACK);
-		b6.setBackground(Color.BLACK);
-		b7.setBackground(Color.BLACK);
-		b8.setBackground(Color.BLACK);
-		b9.setBackground(Color.BLACK);
-		b10.setBackground(Color.BLACK);
-		b11.setBackground(Color.BLACK);
-		b12.setBackground(Color.BLACK);
-		b13.setBackground(Color.BLACK);
-		b14.setBackground(Color.BLACK);
-		b15.setBackground(Color.BLACK);
-		b16.setBackground(Color.BLACK);
-		b17.setBackground(Color.BLACK);
-		b18.setBackground(Color.BLACK);
-		b19.setBackground(Color.BLACK);
-		b20.setBackground(Color.BLACK);
-		b21.setBackground(Color.BLACK);
-		b22.setBackground(Color.BLACK);
-		b23.setBackground(Color.BLACK);
-		b24.setBackground(Color.BLACK);
-		b25.setBackground(Color.BLACK);
+		allblack(b, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13, b14,
+				b15, b16, b17, b18, b19, b20, b21, b22, b23, b24, b25);
 		rg.generate0();
 		f.addKeyListener(this);
+		b.setOpaque(true);
+		b2.setOpaque(true);
+		b3.setOpaque(true);
+		b4.setOpaque(true);
+		b5.setOpaque(true);
+		b6.setOpaque(true);
+		b7.setOpaque(true);
+		b8.setOpaque(true);
+		b9.setOpaque(true);
+		b10.setOpaque(true);
+		b11.setOpaque(true);
+		b12.setOpaque(true);
+		b13.setOpaque(true);
+		b14.setOpaque(true);
+		b15.setOpaque(true);
+		b16.setOpaque(true);
+		b17.setOpaque(true);
+		b18.setOpaque(true);
+		b19.setOpaque(true);
+		b20.setOpaque(true);
+		b21.setOpaque(true);
+		b22.setOpaque(true);
+		b23.setOpaque(true);
+		b24.setOpaque(true);
+		b25.setOpaque(true);
+		b.setBorderPainted(false);
+		b2.setBorderPainted(false);
+		b3.setBorderPainted(false);
+		b4.setBorderPainted(false);
+		b5.setBorderPainted(false);
+		b6.setBorderPainted(false);
+		b7.setBorderPainted(false);
+		b8.setBorderPainted(false);
+		b9.setBorderPainted(false);
+		b10.setBorderPainted(false);
+		b11.setBorderPainted(false);
+		b12.setBorderPainted(false);
+		b13.setBorderPainted(false);
+		b14.setBorderPainted(false);
+		b15.setBorderPainted(false);
+		b16.setBorderPainted(false);
+		b17.setBorderPainted(false);
+		b18.setBorderPainted(false);
+		b19.setBorderPainted(false);
+		b20.setBorderPainted(false);
+		b21.setBorderPainted(false);
+		b22.setBorderPainted(false);
+		b23.setBorderPainted(false);
+		b24.setBorderPainted(false);
+		b25.setBorderPainted(false);
 		b.addActionListener(this);
 		b2.addActionListener(this);
 		b3.addActionListener(this);
@@ -580,7 +607,8 @@ public class LightSwitch implements ActionListener, KeyListener {
 				b23.setBackground(Color.YELLOW);
 				b24.setBackground(Color.YELLOW);
 				b25.setBackground(Color.YELLOW);
-				JOptionPane.showMessageDialog(null, "You win!\nScore: " + score);
+				JOptionPane
+						.showMessageDialog(null, "You win!\nScore: " + score);
 				l2.setText("The End");
 			}
 		}
@@ -654,31 +682,9 @@ public class LightSwitch implements ActionListener, KeyListener {
 			if (levelSelect == 2) {
 				level = -1;
 				score = -100;
-				b.setBackground(Color.BLACK);
-				b2.setBackground(Color.BLACK);
-				b3.setBackground(Color.BLACK);
-				b4.setBackground(Color.BLACK);
-				b5.setBackground(Color.BLACK);
-				b6.setBackground(Color.BLACK);
-				b7.setBackground(Color.BLACK);
-				b8.setBackground(Color.BLACK);
-				b9.setBackground(Color.BLACK);
-				b10.setBackground(Color.BLACK);
-				b11.setBackground(Color.BLACK);
-				b12.setBackground(Color.BLACK);
-				b13.setBackground(Color.BLACK);
-				b14.setBackground(Color.BLACK);
-				b15.setBackground(Color.BLACK);
-				b16.setBackground(Color.BLACK);
-				b17.setBackground(Color.BLACK);
-				b18.setBackground(Color.BLACK);
-				b19.setBackground(Color.BLACK);
-				b20.setBackground(Color.BLACK);
-				b21.setBackground(Color.BLACK);
-				b22.setBackground(Color.BLACK);
-				b23.setBackground(Color.BLACK);
-				b24.setBackground(Color.BLACK);
-				b25.setBackground(Color.BLACK);
+				allblack(b, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13,
+						b14, b15, b16, b17, b18, b19, b20, b21, b22, b23, b24,
+						b25);
 				check(b, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13,
 						b14, b15, b16, b17, b18, b19, b20, b21, b22, b23, b24,
 						b25);
@@ -688,31 +694,9 @@ public class LightSwitch implements ActionListener, KeyListener {
 			if (levelSelect == 2) {
 				level = 0;
 				score = 0;
-				b.setBackground(Color.BLACK);
-				b2.setBackground(Color.BLACK);
-				b3.setBackground(Color.BLACK);
-				b4.setBackground(Color.BLACK);
-				b5.setBackground(Color.BLACK);
-				b6.setBackground(Color.BLACK);
-				b7.setBackground(Color.BLACK);
-				b8.setBackground(Color.BLACK);
-				b9.setBackground(Color.BLACK);
-				b10.setBackground(Color.BLACK);
-				b11.setBackground(Color.BLACK);
-				b12.setBackground(Color.BLACK);
-				b13.setBackground(Color.BLACK);
-				b14.setBackground(Color.BLACK);
-				b15.setBackground(Color.BLACK);
-				b16.setBackground(Color.BLACK);
-				b17.setBackground(Color.BLACK);
-				b18.setBackground(Color.BLACK);
-				b19.setBackground(Color.BLACK);
-				b20.setBackground(Color.BLACK);
-				b21.setBackground(Color.BLACK);
-				b22.setBackground(Color.BLACK);
-				b23.setBackground(Color.BLACK);
-				b24.setBackground(Color.BLACK);
-				b25.setBackground(Color.BLACK);
+				allblack(b, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13,
+						b14, b15, b16, b17, b18, b19, b20, b21, b22, b23, b24,
+						b25);
 				check(b, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13,
 						b14, b15, b16, b17, b18, b19, b20, b21, b22, b23, b24,
 						b25);
@@ -722,31 +706,9 @@ public class LightSwitch implements ActionListener, KeyListener {
 			if (levelSelect == 2) {
 				level = 1;
 				score = 100;
-				b.setBackground(Color.BLACK);
-				b2.setBackground(Color.BLACK);
-				b3.setBackground(Color.BLACK);
-				b4.setBackground(Color.BLACK);
-				b5.setBackground(Color.BLACK);
-				b6.setBackground(Color.BLACK);
-				b7.setBackground(Color.BLACK);
-				b8.setBackground(Color.BLACK);
-				b9.setBackground(Color.BLACK);
-				b10.setBackground(Color.BLACK);
-				b11.setBackground(Color.BLACK);
-				b12.setBackground(Color.BLACK);
-				b13.setBackground(Color.BLACK);
-				b14.setBackground(Color.BLACK);
-				b15.setBackground(Color.BLACK);
-				b16.setBackground(Color.BLACK);
-				b17.setBackground(Color.BLACK);
-				b18.setBackground(Color.BLACK);
-				b19.setBackground(Color.BLACK);
-				b20.setBackground(Color.BLACK);
-				b21.setBackground(Color.BLACK);
-				b22.setBackground(Color.BLACK);
-				b23.setBackground(Color.BLACK);
-				b24.setBackground(Color.BLACK);
-				b25.setBackground(Color.BLACK);
+				allblack(b, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13,
+						b14, b15, b16, b17, b18, b19, b20, b21, b22, b23, b24,
+						b25);
 				check(b, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13,
 						b14, b15, b16, b17, b18, b19, b20, b21, b22, b23, b24,
 						b25);
@@ -756,31 +718,9 @@ public class LightSwitch implements ActionListener, KeyListener {
 			if (levelSelect == 2) {
 				level = 2;
 				score = 200;
-				b.setBackground(Color.BLACK);
-				b2.setBackground(Color.BLACK);
-				b3.setBackground(Color.BLACK);
-				b4.setBackground(Color.BLACK);
-				b5.setBackground(Color.BLACK);
-				b6.setBackground(Color.BLACK);
-				b7.setBackground(Color.BLACK);
-				b8.setBackground(Color.BLACK);
-				b9.setBackground(Color.BLACK);
-				b10.setBackground(Color.BLACK);
-				b11.setBackground(Color.BLACK);
-				b12.setBackground(Color.BLACK);
-				b13.setBackground(Color.BLACK);
-				b14.setBackground(Color.BLACK);
-				b15.setBackground(Color.BLACK);
-				b16.setBackground(Color.BLACK);
-				b17.setBackground(Color.BLACK);
-				b18.setBackground(Color.BLACK);
-				b19.setBackground(Color.BLACK);
-				b20.setBackground(Color.BLACK);
-				b21.setBackground(Color.BLACK);
-				b22.setBackground(Color.BLACK);
-				b23.setBackground(Color.BLACK);
-				b24.setBackground(Color.BLACK);
-				b25.setBackground(Color.BLACK);
+				allblack(b, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13,
+						b14, b15, b16, b17, b18, b19, b20, b21, b22, b23, b24,
+						b25);
 				check(b, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13,
 						b14, b15, b16, b17, b18, b19, b20, b21, b22, b23, b24,
 						b25);
@@ -790,31 +730,9 @@ public class LightSwitch implements ActionListener, KeyListener {
 			if (levelSelect == 2) {
 				level = 3;
 				score = 300;
-				b.setBackground(Color.BLACK);
-				b2.setBackground(Color.BLACK);
-				b3.setBackground(Color.BLACK);
-				b4.setBackground(Color.BLACK);
-				b5.setBackground(Color.BLACK);
-				b6.setBackground(Color.BLACK);
-				b7.setBackground(Color.BLACK);
-				b8.setBackground(Color.BLACK);
-				b9.setBackground(Color.BLACK);
-				b10.setBackground(Color.BLACK);
-				b11.setBackground(Color.BLACK);
-				b12.setBackground(Color.BLACK);
-				b13.setBackground(Color.BLACK);
-				b14.setBackground(Color.BLACK);
-				b15.setBackground(Color.BLACK);
-				b16.setBackground(Color.BLACK);
-				b17.setBackground(Color.BLACK);
-				b18.setBackground(Color.BLACK);
-				b19.setBackground(Color.BLACK);
-				b20.setBackground(Color.BLACK);
-				b21.setBackground(Color.BLACK);
-				b22.setBackground(Color.BLACK);
-				b23.setBackground(Color.BLACK);
-				b24.setBackground(Color.BLACK);
-				b25.setBackground(Color.BLACK);
+				allblack(b, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13,
+						b14, b15, b16, b17, b18, b19, b20, b21, b22, b23, b24,
+						b25);
 				check(b, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13,
 						b14, b15, b16, b17, b18, b19, b20, b21, b22, b23, b24,
 						b25);
@@ -824,31 +742,9 @@ public class LightSwitch implements ActionListener, KeyListener {
 			if (levelSelect == 2) {
 				level = 4;
 				score = 400;
-				b.setBackground(Color.BLACK);
-				b2.setBackground(Color.BLACK);
-				b3.setBackground(Color.BLACK);
-				b4.setBackground(Color.BLACK);
-				b5.setBackground(Color.BLACK);
-				b6.setBackground(Color.BLACK);
-				b7.setBackground(Color.BLACK);
-				b8.setBackground(Color.BLACK);
-				b9.setBackground(Color.BLACK);
-				b10.setBackground(Color.BLACK);
-				b11.setBackground(Color.BLACK);
-				b12.setBackground(Color.BLACK);
-				b13.setBackground(Color.BLACK);
-				b14.setBackground(Color.BLACK);
-				b15.setBackground(Color.BLACK);
-				b16.setBackground(Color.BLACK);
-				b17.setBackground(Color.BLACK);
-				b18.setBackground(Color.BLACK);
-				b19.setBackground(Color.BLACK);
-				b20.setBackground(Color.BLACK);
-				b21.setBackground(Color.BLACK);
-				b22.setBackground(Color.BLACK);
-				b23.setBackground(Color.BLACK);
-				b24.setBackground(Color.BLACK);
-				b25.setBackground(Color.BLACK);
+				allblack(b, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13,
+						b14, b15, b16, b17, b18, b19, b20, b21, b22, b23, b24,
+						b25);
 				check(b, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13,
 						b14, b15, b16, b17, b18, b19, b20, b21, b22, b23, b24,
 						b25);
@@ -858,31 +754,9 @@ public class LightSwitch implements ActionListener, KeyListener {
 			if (levelSelect == 2) {
 				level = 5;
 				score = 500;
-				b.setBackground(Color.BLACK);
-				b2.setBackground(Color.BLACK);
-				b3.setBackground(Color.BLACK);
-				b4.setBackground(Color.BLACK);
-				b5.setBackground(Color.BLACK);
-				b6.setBackground(Color.BLACK);
-				b7.setBackground(Color.BLACK);
-				b8.setBackground(Color.BLACK);
-				b9.setBackground(Color.BLACK);
-				b10.setBackground(Color.BLACK);
-				b11.setBackground(Color.BLACK);
-				b12.setBackground(Color.BLACK);
-				b13.setBackground(Color.BLACK);
-				b14.setBackground(Color.BLACK);
-				b15.setBackground(Color.BLACK);
-				b16.setBackground(Color.BLACK);
-				b17.setBackground(Color.BLACK);
-				b18.setBackground(Color.BLACK);
-				b19.setBackground(Color.BLACK);
-				b20.setBackground(Color.BLACK);
-				b21.setBackground(Color.BLACK);
-				b22.setBackground(Color.BLACK);
-				b23.setBackground(Color.BLACK);
-				b24.setBackground(Color.BLACK);
-				b25.setBackground(Color.BLACK);
+				allblack(b, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13,
+						b14, b15, b16, b17, b18, b19, b20, b21, b22, b23, b24,
+						b25);
 				check(b, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13,
 						b14, b15, b16, b17, b18, b19, b20, b21, b22, b23, b24,
 						b25);
@@ -892,31 +766,9 @@ public class LightSwitch implements ActionListener, KeyListener {
 			if (levelSelect == 2) {
 				level = 6;
 				score = 600;
-				b.setBackground(Color.BLACK);
-				b2.setBackground(Color.BLACK);
-				b3.setBackground(Color.BLACK);
-				b4.setBackground(Color.BLACK);
-				b5.setBackground(Color.BLACK);
-				b6.setBackground(Color.BLACK);
-				b7.setBackground(Color.BLACK);
-				b8.setBackground(Color.BLACK);
-				b9.setBackground(Color.BLACK);
-				b10.setBackground(Color.BLACK);
-				b11.setBackground(Color.BLACK);
-				b12.setBackground(Color.BLACK);
-				b13.setBackground(Color.BLACK);
-				b14.setBackground(Color.BLACK);
-				b15.setBackground(Color.BLACK);
-				b16.setBackground(Color.BLACK);
-				b17.setBackground(Color.BLACK);
-				b18.setBackground(Color.BLACK);
-				b19.setBackground(Color.BLACK);
-				b20.setBackground(Color.BLACK);
-				b21.setBackground(Color.BLACK);
-				b22.setBackground(Color.BLACK);
-				b23.setBackground(Color.BLACK);
-				b24.setBackground(Color.BLACK);
-				b25.setBackground(Color.BLACK);
+				allblack(b, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13,
+						b14, b15, b16, b17, b18, b19, b20, b21, b22, b23, b24,
+						b25);
 				check(b, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13,
 						b14, b15, b16, b17, b18, b19, b20, b21, b22, b23, b24,
 						b25);
@@ -926,31 +778,9 @@ public class LightSwitch implements ActionListener, KeyListener {
 			if (levelSelect == 2) {
 				level = 7;
 				score = 700;
-				b.setBackground(Color.BLACK);
-				b2.setBackground(Color.BLACK);
-				b3.setBackground(Color.BLACK);
-				b4.setBackground(Color.BLACK);
-				b5.setBackground(Color.BLACK);
-				b6.setBackground(Color.BLACK);
-				b7.setBackground(Color.BLACK);
-				b8.setBackground(Color.BLACK);
-				b9.setBackground(Color.BLACK);
-				b10.setBackground(Color.BLACK);
-				b11.setBackground(Color.BLACK);
-				b12.setBackground(Color.BLACK);
-				b13.setBackground(Color.BLACK);
-				b14.setBackground(Color.BLACK);
-				b15.setBackground(Color.BLACK);
-				b16.setBackground(Color.BLACK);
-				b17.setBackground(Color.BLACK);
-				b18.setBackground(Color.BLACK);
-				b19.setBackground(Color.BLACK);
-				b20.setBackground(Color.BLACK);
-				b21.setBackground(Color.BLACK);
-				b22.setBackground(Color.BLACK);
-				b23.setBackground(Color.BLACK);
-				b24.setBackground(Color.BLACK);
-				b25.setBackground(Color.BLACK);
+				allblack(b, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13,
+						b14, b15, b16, b17, b18, b19, b20, b21, b22, b23, b24,
+						b25);
 				check(b, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13,
 						b14, b15, b16, b17, b18, b19, b20, b21, b22, b23, b24,
 						b25);
@@ -960,31 +790,9 @@ public class LightSwitch implements ActionListener, KeyListener {
 			if (levelSelect == 2) {
 				level = 8;
 				score = 800;
-				b.setBackground(Color.BLACK);
-				b2.setBackground(Color.BLACK);
-				b3.setBackground(Color.BLACK);
-				b4.setBackground(Color.BLACK);
-				b5.setBackground(Color.BLACK);
-				b6.setBackground(Color.BLACK);
-				b7.setBackground(Color.BLACK);
-				b8.setBackground(Color.BLACK);
-				b9.setBackground(Color.BLACK);
-				b10.setBackground(Color.BLACK);
-				b11.setBackground(Color.BLACK);
-				b12.setBackground(Color.BLACK);
-				b13.setBackground(Color.BLACK);
-				b14.setBackground(Color.BLACK);
-				b15.setBackground(Color.BLACK);
-				b16.setBackground(Color.BLACK);
-				b17.setBackground(Color.BLACK);
-				b18.setBackground(Color.BLACK);
-				b19.setBackground(Color.BLACK);
-				b20.setBackground(Color.BLACK);
-				b21.setBackground(Color.BLACK);
-				b22.setBackground(Color.BLACK);
-				b23.setBackground(Color.BLACK);
-				b24.setBackground(Color.BLACK);
-				b25.setBackground(Color.BLACK);
+				allblack(b, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13,
+						b14, b15, b16, b17, b18, b19, b20, b21, b22, b23, b24,
+						b25);
 				check(b, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13,
 						b14, b15, b16, b17, b18, b19, b20, b21, b22, b23, b24,
 						b25);
@@ -994,31 +802,9 @@ public class LightSwitch implements ActionListener, KeyListener {
 			if (levelSelect == 2) {
 				level = 9;
 				score = 900;
-				b.setBackground(Color.BLACK);
-				b2.setBackground(Color.BLACK);
-				b3.setBackground(Color.BLACK);
-				b4.setBackground(Color.BLACK);
-				b5.setBackground(Color.BLACK);
-				b6.setBackground(Color.BLACK);
-				b7.setBackground(Color.BLACK);
-				b8.setBackground(Color.BLACK);
-				b9.setBackground(Color.BLACK);
-				b10.setBackground(Color.BLACK);
-				b11.setBackground(Color.BLACK);
-				b12.setBackground(Color.BLACK);
-				b13.setBackground(Color.BLACK);
-				b14.setBackground(Color.BLACK);
-				b15.setBackground(Color.BLACK);
-				b16.setBackground(Color.BLACK);
-				b17.setBackground(Color.BLACK);
-				b18.setBackground(Color.BLACK);
-				b19.setBackground(Color.BLACK);
-				b20.setBackground(Color.BLACK);
-				b21.setBackground(Color.BLACK);
-				b22.setBackground(Color.BLACK);
-				b23.setBackground(Color.BLACK);
-				b24.setBackground(Color.BLACK);
-				b25.setBackground(Color.BLACK);
+				allblack(b, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13,
+						b14, b15, b16, b17, b18, b19, b20, b21, b22, b23, b24,
+						b25);
 				check(b, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13,
 						b14, b15, b16, b17, b18, b19, b20, b21, b22, b23, b24,
 						b25);
@@ -1028,31 +814,9 @@ public class LightSwitch implements ActionListener, KeyListener {
 			if (levelSelect == 2) {
 				level = 10;
 				score = 1000;
-				b.setBackground(Color.BLACK);
-				b2.setBackground(Color.BLACK);
-				b3.setBackground(Color.BLACK);
-				b4.setBackground(Color.BLACK);
-				b5.setBackground(Color.BLACK);
-				b6.setBackground(Color.BLACK);
-				b7.setBackground(Color.BLACK);
-				b8.setBackground(Color.BLACK);
-				b9.setBackground(Color.BLACK);
-				b10.setBackground(Color.BLACK);
-				b11.setBackground(Color.BLACK);
-				b12.setBackground(Color.BLACK);
-				b13.setBackground(Color.BLACK);
-				b14.setBackground(Color.BLACK);
-				b15.setBackground(Color.BLACK);
-				b16.setBackground(Color.BLACK);
-				b17.setBackground(Color.BLACK);
-				b18.setBackground(Color.BLACK);
-				b19.setBackground(Color.BLACK);
-				b20.setBackground(Color.BLACK);
-				b21.setBackground(Color.BLACK);
-				b22.setBackground(Color.BLACK);
-				b23.setBackground(Color.BLACK);
-				b24.setBackground(Color.BLACK);
-				b25.setBackground(Color.BLACK);
+				allblack(b, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13,
+						b14, b15, b16, b17, b18, b19, b20, b21, b22, b23, b24,
+						b25);
 				check(b, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13,
 						b14, b15, b16, b17, b18, b19, b20, b21, b22, b23, b24,
 						b25);
@@ -1060,35 +824,45 @@ public class LightSwitch implements ActionListener, KeyListener {
 		}
 
 		if (debugMode == 11) {
-			b.setBackground(Color.BLACK);
-			b2.setBackground(Color.BLACK);
-			b3.setBackground(Color.BLACK);
-			b4.setBackground(Color.BLACK);
-			b5.setBackground(Color.BLACK);
-			b6.setBackground(Color.BLACK);
-			b7.setBackground(Color.BLACK);
-			b8.setBackground(Color.BLACK);
-			b9.setBackground(Color.BLACK);
-			b10.setBackground(Color.BLACK);
-			b11.setBackground(Color.BLACK);
-			b12.setBackground(Color.BLACK);
-			b13.setBackground(Color.BLACK);
-			b14.setBackground(Color.BLACK);
-			b15.setBackground(Color.BLACK);
-			b16.setBackground(Color.BLACK);
-			b17.setBackground(Color.BLACK);
-			b18.setBackground(Color.BLACK);
-			b19.setBackground(Color.BLACK);
-			b20.setBackground(Color.BLACK);
-			b21.setBackground(Color.BLACK);
-			b22.setBackground(Color.BLACK);
-			b23.setBackground(Color.BLACK);
-			b24.setBackground(Color.BLACK);
-			b25.setBackground(Color.BLACK);
+			allblack(b, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13,
+					b14, b15, b16, b17, b18, b19, b20, b21, b22, b23, b24, b25);
 			debugMode = 0;
 			l2.setText("Debug");
 			l.setText("Mode");
 		}
+	}
+
+	public void allblack(JButton b, JButton b2, JButton b3, JButton b4,
+			JButton b5, JButton b6, JButton b7, JButton b8, JButton b9,
+			JButton b10, JButton b11, JButton b12, JButton b13, JButton b14,
+			JButton b15, JButton b16, JButton b17, JButton b18, JButton b19,
+			JButton b20, JButton b21, JButton b22, JButton b23, JButton b24,
+			JButton b25) {
+		b.setBackground(Color.BLACK);
+		b2.setBackground(Color.BLACK);
+		b3.setBackground(Color.BLACK);
+		b4.setBackground(Color.BLACK);
+		b5.setBackground(Color.BLACK);
+		b6.setBackground(Color.BLACK);
+		b7.setBackground(Color.BLACK);
+		b8.setBackground(Color.BLACK);
+		b9.setBackground(Color.BLACK);
+		b10.setBackground(Color.BLACK);
+		b11.setBackground(Color.BLACK);
+		b12.setBackground(Color.BLACK);
+		b13.setBackground(Color.BLACK);
+		b14.setBackground(Color.BLACK);
+		b15.setBackground(Color.BLACK);
+		b16.setBackground(Color.BLACK);
+		b17.setBackground(Color.BLACK);
+		b18.setBackground(Color.BLACK);
+		b19.setBackground(Color.BLACK);
+		b20.setBackground(Color.BLACK);
+		b21.setBackground(Color.BLACK);
+		b22.setBackground(Color.BLACK);
+		b23.setBackground(Color.BLACK);
+		b24.setBackground(Color.BLACK);
+		b25.setBackground(Color.BLACK);
 	}
 
 	@Override
